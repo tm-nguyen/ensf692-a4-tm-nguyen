@@ -153,10 +153,6 @@ def main():
     # Data formatting to read the excel file
     df = pd.read_excel(path)
     df = format_data(df)
-    
-    # Apply masking operation to filter out rows if they are less than 20.
-    mask = df['Total'] > 20
-    df = df[mask]
 
     # User input stage
     # The breed to call the def user_input that prompt the user to enter a breed dog name.
